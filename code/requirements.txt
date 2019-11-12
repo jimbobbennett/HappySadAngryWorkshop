@@ -1,0 +1,2 @@
+flask
+azure-cognitiveservices-vision-face
