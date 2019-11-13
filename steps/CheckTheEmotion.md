@@ -118,42 +118,6 @@ The Face Api is available as a Python package.
   });
   ```
 
-## Run the code
-
-There are two ways to run this code:
-
-* From the Debug pane of the toolbar, select the green *Start Debugging* button.
-
-  If you use this method you will be able to set breakpoints and debug your code.
-
-* From the terminal, run the file as a Flask app using:
-  
-  ```sh
-  flask run
-  ```
-
-  If you use this method you will not be able to set breakpoints and debug your code.
-
-The Web App will be run, and can be accessed from your device at [http://127.0.0.1:5000](http://127.0.0.1:5000). You will see this URL in the output window, and you can use **ctrl+click** to go directly to this site.
-
-* Open this URL in a web browser to see the game web page. You may be asked for permission for the page to access the camera. If this happens you many want to always allow this to save being asked every time. One the page you will see a random emotion being asked for, and a live feed from your camera.
-
-  ![The game page asking for an emption and showing a feed from the camera](../images/GameWebPageRunningLocally.png)
-
-* Stop the debugger once you have tested this out.
-
-## Play the game
-
-Every time you load the page it will select a different emotion.
-
-* Look at your camera and do your best to show the requested emotion.
-
-* Click the **Capture emotion** button. An image will be captured and checked for your emotion.
-
-* You will either see a green check showing you successfully showed the given emotion, or a red cross if you didn't, along with the emotion the Face API thought you showed. If no faces are in the image you will see an error.
-
-  ![The game results showing one game won, and one lost](../images/GameResults.png)
-
 ## Deploy the code
 
 Once the code is working locally, it can be deployed to Azure so others can play the game.
@@ -175,6 +139,18 @@ Once the code is working locally, it can be deployed to Azure so others can play
   ![The deploy progress dialog](../images/DeployProgress.png)
 
 * Open the web site in your browser and play the game.
+
+## Play the game
+
+Every time you load the page it will select a different emotion.
+
+* Look at your camera and do your best to show the requested emotion.
+
+* Click the **Capture emotion** button. An image will be captured and checked for your emotion.
+
+* You will either see a green check showing you successfully showed the given emotion, or a red cross if you didn't, along with the emotion the Face API thought you showed. If no faces are in the image you will see an error.
+
+  ![The game results showing one game won, and one lost](../images/GameResults.png)
 
 ## Next step
 

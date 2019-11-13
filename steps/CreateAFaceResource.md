@@ -31,15 +31,15 @@ Before you can use the Face Api, you will need a subscription key. You can get t
 
   * Choose a location to run this code. Azure has 'regions' all around the world, a region being a group of data centers full of computers and other cloud hardware. Choose a region closest to you.
 
-  * Select the pricing tier. With this app, you will make less than 20 calls a minute, and less than 30,000 calls a month then select *F0*, the free tier. There is a paid tier for apps that need to use the service more often.
+  * Select the pricing tier. With this app, you will make less than 20 calls a minute, and less than 30,000 calls a month, so select *F0*, the free tier. There is a paid tier for apps that need to use the service more often.
 
     > You can only have one free tier of each Azure Service, so if you have already created a free tier Face API resource before you will either need to use a paid tier, or connect to the existing resource.
 
   * Select the resource group you want to run the code in. One would have been created for you when you deployed the web app in an earlier step called something like `appsvc_linux_centralus`, so select this one.
 
-  * Select the **Create** button.
-
     > Everything you create in Azure, such as access to the Face Api, App Services, and databases are called Resources. Resource groups are a way to group resources together so you can manage them in bulk. By having everything for this workshop in the same resource group makes it easy to delete everything at the end when you have finished.
+
+  * Select the **Create** button.
 
   ![The create face blade in Azure](../images/CreateFaceAzure.png)
 
@@ -48,26 +48,6 @@ Before you can use the Face Api, you will need a subscription key. You can get t
   ![The notification showing the face resource created](../images/FaceCreated.png)
 
 * From the resource, head to the *Quick Start* tab. Take a note of the *Key1* and *Endpoint* as you will need these later.
-
-## Install the Face Api package
-
-The Face Api is available as a Python package.
-
-* Open the `requirements.txt` file in Visual Studio Code.
-
-* Add the following to the bottom of the file:
-
-  ```python
-  azure-cognitiveservices-vision-face
-  ```
-
-* Save the file
-
-* Install the new package from the terminal using the following command:
-  
-  ```sh
-  pip3 install -r requirements.txt
-  ```
 
 ## Create configuration variables for the Face API key and endpoint
 
@@ -87,6 +67,8 @@ You should put all your secret keys into the `.env` file, and you should not che
   ```
 
   Replace `<endpoint>` with the first part of the endpoint you noted down earlier from the Face Api Resource Quick start. You don't need the `/face/v1.0` part.
+
+  For example, if your resource was called `HappySadAngryFaceApi`, then the endpoint showing in the portal will be `https://happysadangryfaceapi.cognitiveservices.azure.com/face/v1.0`. Set the `face_api_endpoint` to be `https://happysadangryfaceapi.cognitiveservices.azure.com`.
 
   Replace `<key>` with one the key you noted down earlier from the Face Api Resource Quick start.
 
