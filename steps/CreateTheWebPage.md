@@ -4,9 +4,9 @@ In the [previous step](./CreateAFlaskWebApp.md), you created a simple Flask Web 
 
 ## Rendering HTML
 
-To show a web page for the game, the Flask app needs to show some HTML. This HTML needs to be configurable to include a randmoly selected emotion.
+To show a web page for the game, the Flask app needs to show some HTML. This HTML needs to be configurable to include a randomly selected emotion.
 
-There are two ways to return an HTML page from a Flask app. You can return text and have it wrapped into a simple HTML page, just like the existing `/` route, or you can use templates. Templates allow you to define some HTML that can show data in some way, and use that template with data to build an HTML page. For example if you wanted to show page with a list of names you could specify a template that iterated the list and returned list items, then use that template with some actual data to create the list in HTML.
+There are two ways to return an HTML page from a Flask app. You can return text or raw HTML, or you can use templates. Templates allow you to define some HTML that can show data in some way, and use that template with data to build an HTML page. For example if you wanted to show page with a list of names you could specify a template that iterated the list and returned list items, then use that template with some actual data to create the list in HTML.
 
 Converting a template and data to HTML is called *Rendering*.
 
@@ -41,7 +41,7 @@ Templates live in a folder called `templates`.
         window.addEventListener("DOMContentLoaded", function() {
           var video = document.getElementById('video');
 
-          if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             const getImage = async () => {
               video.srcObject = await  navigator.mediaDevices.getUserMedia({ video: true })
               video.play();
@@ -132,7 +132,7 @@ This is a standard HTML file with a body and a title of 'Happy, Sad, Angry', the
 <h1>Give me your best {{ page_data.emotion }} face</h1>
 ```
 
-This code puts a header on the screen to show the emotion that the player has to show. The `{{ page_data.emotion }}` part indicates that this is a value that will be rendered using data passed in to the Flask renderer. It will look for a property passed in called `page_data`, and on that find a field called `emotion`, and insert that value into the header. For example if the value of `page_data.emotion` was `"Angry"`, the header would show `Give me your best angry face`.
+This code puts a header on the screen to show the emotion that the player has to show. The `{{ page_data.emotion }}` part indicates that this is a value that will be rendered using data passed in to the Flask renderer. It will look for a property passed in called `page_data`, and on that find a field called `emotion`, and insert that value into the header. For example if the value of `page_data.emotion` was `"angry"`, the header would show `Give me your best angry face`.
 
 ```html
 <video id="video" autoplay></video>
@@ -166,7 +166,7 @@ var video = document.getElementById('video');
 This code will get the video player from the HTML based off its `id` of `video`, and assign it to a variable.
 
 ```js
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   const getImage = async () => {
     video.srcObject = await  navigator.mediaDevices.getUserMedia({ video: true })
     video.play();
@@ -184,7 +184,7 @@ import random
 from flask import Flask, render_template
 ```
 
-This tells the Python compiler that we want to use code in the `render_template` module tha was installed as part of the `flask` package, as well as the random package that comes as part of Python.
+This tells the Python compiler that we want to use code in the `render_template` module that was installed as part of the `flask` package, as well as the `random` module that comes as part of Python.
 
 ```python
 emotions = ['anger','contempt','disgust','fear','happiness','sadness','surprise']

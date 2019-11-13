@@ -4,7 +4,7 @@ In this step you will create a Flask web app.
 
 ## Create folders for the project
 
-* Create a folder called `MoodDetector` somewhere on your machine.
+* Create a folder called `HappySadAngry` somewhere on your machine.
 
 ## Open this folder in Visual Studio Code
 
@@ -14,7 +14,7 @@ In this step you will create a Flask web app.
   * On MacOS select *File->Open...*
   * On Windows select *File->Open Folder...*
 
-* Navigate to the new `MoodDetector` folder and select **Open**.
+* Navigate to the new `HappySadAngry` folder and select **Open**.
 
 You will see the empty folder appear in the *Explorer*.
 
@@ -33,6 +33,8 @@ Instead of installing it using `pip` from the terminal, it should be configured 
 
 * Save the file
 
+  > If you don't want to have to remember to always save files, you can turn on Auto Save by selecting *File -> Auto Save*.
+
 * Install the packages from the terminal using the following command:
   
   ```sh
@@ -43,7 +45,7 @@ Instead of installing it using `pip` from the terminal, it should be configured 
 
 ## Create a file for the code
 
-* From Visual Studio Code, select the **New File** button in the Explorer bar in the *MoodDetector* section.
+* From Visual Studio Code, select the **New File** button in the Explorer bar in the *HappySadAngry* section.
 
   ![The New File button in the Visual Studio Code explorer](../images/VSCodeNewFile.png)
 
@@ -66,18 +68,16 @@ Instead of installing it using `pip` from the terminal, it should be configured 
   ```
 
 * Save the file
-  
-  > If you don't want to have to remember to always save files, you can turn on Auto Save by selecting *File -> Auto Save*.
 
 ## Run the code
 
-This code can't be run from the terminal using the file name, instead it has to be run as a Flask app using the Flask package. There are two ways to do this:
+This code can't be run from the terminal using the `Python` command, instead it has to be run as a Flask app using the Flask package. There are two ways to do this:
 
 * From the Debug pane of the toolbar, drop down the *Debug configuration* box and select *Python: Flask*.
   
   > If you do not see this option, then select *Add configuration* to edit the `launch.json` file. This should create a set of launch options for Python files.
   >
-  > If these options are not created automatically, select *Add Configuration...* and select the *Python: Flask* option. Save this file.
+  > If these options are not created automatically, select *Add Configuration...* and select the *Flask* option. Save this file.
   >
   > Select *Python: Flask* from the *Debug configuration* box.
 

@@ -1,6 +1,6 @@
 # Happy, Sad, Angry Workshop
 
-This workshop shows how to build a web based game called **Happy, Sad, Angry** using [Python](https://www.python.org) and [Flask](http://flask.pocoo.org) running on [Microsoft Azure](https://azure.microsoft.com/free/students/?WT.mc_id=happysadangry-github-jabenn). This game selects an emotion, and you have to try your best to show that emotion on your face. Once you have your best emotion face on, you take a picture with your camera and the web game will check to see what emotion you are showing using the [Azure Face Api](https://azure.microsoft.com/services/cognitive-services/face/?WT.mc_id=happysadangry-github-jabenn). If it is the same as the one you we're asked to show you win.
+This workshop shows how to build a web based game called **Happy, Sad, Angry** using [Python](https://www.python.org) and [Flask](http://flask.pocoo.org) along with some HTML and JavaScript running on [Microsoft Azure](https://azure.microsoft.com/free/students/?WT.mc_id=happysadangry-github-jabenn). This game selects an emotion, and you have to try your best to show that emotion on your face. Once you have your best emotion face on, you take a picture with your camera and the web game will check to see what emotion you are showing using the [Azure Face Api](https://azure.microsoft.com/services/cognitive-services/face/?WT.mc_id=happysadangry-github-jabenn). If it is the same as the one you we're asked to show you win.
 
 ![The game results showing one game won, and one lost](./images/GameResults.png)
 
@@ -74,7 +74,7 @@ The steps for this workshop are:
 
 ## Code
 
-For reference, you can find the final code for this workshop in the [Code](./code/) folder.
+For reference, you can find the final code for this workshop in the [Code](https://github.com/jimbobbennett/HappySadAngryWorkshop/tree/master/code) folder.
 
 ## Clean up Azure resources
 

@@ -13,9 +13,8 @@
         <script type="text/javascript">
             window.addEventListener("DOMContentLoaded", function() {
                 var video = document.getElementById('video');
-                var message = document.getElementById('message');
 
-                if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                     const getImage = async () => {
                         video.srcObject = await navigator.mediaDevices.getUserMedia({ video: true })
                         video.play();
@@ -23,6 +22,8 @@
                     getImage()
                 }
 
+                var message = document.getElementById('message');
+                
                 document.getElementById('snap').addEventListener('click', function() {
                     var canvas = document.createElement('canvas');
                     canvas.width = 640;

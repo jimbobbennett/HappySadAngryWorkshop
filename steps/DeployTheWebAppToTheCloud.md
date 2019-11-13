@@ -73,30 +73,6 @@ Resource Groups are useful as you can use them to group resources together that 
 
 When your App Service was created, it would have been created inside a new Resource Group, probably named something like `appsvc_linux_centralus`. We will be adding all new resources to this Resource Group in the remainder of this workshop, and deleting this Resource Group at the end to remove all resources.
 
-## Deploy the configuration variables to Azure App Service
-
-To use these values in your deployed app, you will need to add them to the Application Settings for your Azure App Service. This can be done from inside Visual Studio Code.
-
-* Open the command palette:
-  * On Windows, press Ctrl+Shift+P
-  * On MacOS, press Cmd+Shift+P
-
-* Select *Azure App Service: Upload Local Settings...*
-
-  ![The command palette showing the Azure App Service: Upload Local Settings option](../images/UploadLocalSettings.png)
-
-* Select the `.env` file you created.
-
-  ![Selecting the local env file](../images/SelectEnvFile.png)
-
-* Select the Azure subscription for your web app.
-  
-  ![The command palette showing the select subscription option](../images/SelectDeploySubscription.png)
-
-* Select the web app you deployed to.
-
-The settings will be deployed to your web app. You will see a pop up once this is complete.
-
 ## Next step
 
 In this step you deployed your Web App to the cloud, hosted in Azure. In the [next step](./CreateAFaceResource.md), you will create a Face API resource that can be used to analyse the camera images.
