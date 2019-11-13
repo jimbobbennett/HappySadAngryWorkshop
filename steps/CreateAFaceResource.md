@@ -126,4 +126,4 @@ You should see the two new application settings, `face_api_endpoint` and `face_a
 
 ## Next step
 
-In this step you created a Face API resource that can be used to analyse the camera images. In the [next step](./CreateTheWebPage.md), you will create the web page for the game that shows the emotion you are trying to show, and captures images from the camera.
+In this step you created a Face API resource that can be used to analyse the camera images. In the [next step](./CheckTheEmotion.md), you will build out the game to capture frames from the camera and look for emotions.

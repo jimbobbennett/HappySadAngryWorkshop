@@ -206,6 +206,6 @@ return render_template('home.html', page_data = page_data)
 
 This will render the HTML from the `home.html` template file, passing the `page_data` dictionary in as a parameter called `page_data`. The tokens in the HTML template that refer to `page_data` will refer to values passed in in this field.
 
-## Next steo
+## Next step
 
 In this step you created the web page for the game that shows the emotion you are trying to show, and captures images from the camera. In the [next step](./DeployTheWebAppToTheCloud.md), you will deploy this Web App to the cloud using Azure App Service.

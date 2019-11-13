@@ -1,4 +1,4 @@
-# Deploy the Web App to the cloud
+# Deploy the Web App to the cloud using Azure App Service
 
 In the [previous step](./CreateTheWebPage.md) created the web page for the game that shows the emotion you are trying to show, and captures images from the camera. In this step you will deploy this Web App to the cloud using Azure App Service.
 
@@ -63,9 +63,7 @@ You can configure an Azure App Service and deploy your code from inside Visual S
   
   ![The deploy progress dialog](../images/DeployProgress.png)
 
-* Once the code has been deployed, you will be able to view the code over the internet. Launch your browser and open your web site. The address will be `https://<web app name>.azurewebsites.net/`. For example, for my web site this is `https://jimspythonwebapp2019.azurewebsites.net/`. You will see the `'Hello World'` page.
-  
-  ![The Hello World site running in Azure](../images/WebsiteRunningInAzure.png)
+* Once the code has been deployed, you will be able to view the code over the internet. Launch your browser and open your web site. The address will be `https://<web app name>.azurewebsites.net/`. For example, for my web site this is `https://jimspythonwebapp2019.azurewebsites.net/`. You will see the game page.
 
 ## Resource groups
 
@@ -98,16 +96,6 @@ To use these values in your deployed app, you will need to add them to the Appli
 * Select the web app you deployed to.
 
 The settings will be deployed to your web app. You will see a pop up once this is complete.
-
-## Verify the Application Settings
-
-You can view the application settings from the Azure tab of the Visual Studio Code toolbar.
-
-* In the *App Service* section, expand your subscription.
-
-* Expand the *Application Settings* section.
-
-You should see the two new application settings, `face_api_endpoint` and `face_api_key` with the values hidden. You can show and hide the values by clicking them
 
 ## Next step
 
