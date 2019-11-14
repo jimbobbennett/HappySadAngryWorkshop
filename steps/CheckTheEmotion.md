@@ -322,7 +322,7 @@ const getResult = async () => {
 }
 ```
 
-This declares an async function called `getResult` that makes a POST REST request to the `/result` route, passing the JSON document. Once the call is made, the JSON in teh result is extracted, and the `message` value in that JSON document is set as the text for the message HTML element, showing the result.
+This declares an async function called `getResult` that makes a POST REST request to the `/result` route, passing the JSON document. Once the call is made, the JSON in the result is extracted, and the `message` value in that JSON document is set as the text for the message HTML element, showing the result.
 
 ```js
 getResult()
