@@ -7,7 +7,7 @@
         <h1>Give me your best {{ page_data.emotion }} face</h1>
         <video id="video" autoplay></video>
         <br/>
-        <button id="snap">Capture emotion</button>
+        <button id="capture">Capture emotion</button>
         <h1 id="message"></h1>
 
         <script type="text/javascript">
@@ -24,7 +24,7 @@
 
                 var message = document.getElementById('message');
                 
-                document.getElementById('snap').addEventListener('click', function() {
+                document.getElementById('capture').addEventListener('click', function() {
                     var canvas = document.createElement('canvas');
                     canvas.width = 640;
                     canvas.height = 480;

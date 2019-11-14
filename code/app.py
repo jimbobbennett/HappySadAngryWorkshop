@@ -34,8 +34,8 @@ def check_results():
     body = request.get_json()
     desired_emotion = body['emotion']
 
-    base64_image = base64.b64decode(body['image_base64'].split(',')[1])
-    image = io.BytesIO(base64_image)
+    image_bytes = base64.b64decode(body['image_base64'].split(',')[1])
+    image = io.BytesIO(image_bytes)
 
     faces = face_client.face.detect_with_stream(image,
                                                 return_face_attributes=['emotion'])
@@ -49,7 +49,10 @@ def check_results():
             })
         else:
             return jsonify({
-                'message': '❌ You failed! You needed to show ' + desired_emotion + ' but you showed ' + detected_emotion
+                'message': '❌ You failed! You needed to show ' + 
+                           desired_emotion + 
+                           ' but you showed ' + 
+                           detected_emotion
             })
     else:
         return jsonify({

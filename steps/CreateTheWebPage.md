@@ -34,7 +34,7 @@ Templates live in a folder called `templates`.
       <h1>Give me your best {{ page_data.emotion }} face</h1>
       <video id="video" autoplay></video>
       <br/>
-      <button id="snap">Capture emotion</button>
+      <button id="capture">Capture emotion</button>
       <h1 id="message"></h1>
 
       <script type="text/javascript">
@@ -137,9 +137,9 @@ This code puts a header on the screen to show the emotion that the player has to
 ```html
 <video id="video" autoplay></video>
 <br/>
-<button id="snap">Capture emotion</button>
+<button id="capture">Capture emotion</button>
 <h1 id="message"></h1>
-````
+```
 
 This defines some standard HTML elements, namely a video player, a button and another header that will show the result. These elements are named by setting their `id` property so that they can be accessed in code in a later step.
 
