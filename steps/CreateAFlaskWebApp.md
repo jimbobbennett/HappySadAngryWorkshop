@@ -103,13 +103,6 @@ The Web App will be run, and can be accessed from your device at [http://127.0.0
 
 ## What does this code do
 
-The overall flow of this code is:
-
-1. Create a Flask app that the Flask framework can use to know this is a Flask Web App
-2. Define a route for '/' that returns `'Hello World'`
-
-Lets look in more detail at the actual code.
-
 ```python
 from flask import Flask
 ```

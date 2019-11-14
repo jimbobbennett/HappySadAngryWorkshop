@@ -43,7 +43,7 @@ Templates live in a folder called `templates`.
 
           if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             const getImage = async () => {
-              video.srcObject = await  navigator.mediaDevices.getUserMedia({ video: true })
+              video.srcObject = await navigator.mediaDevices.getUserMedia({ video: true })
               video.play();
             }
             getImage()
@@ -168,7 +168,7 @@ This code will get the video player from the HTML based off its `id` of `video`,
 ```js
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   const getImage = async () => {
-    video.srcObject = await  navigator.mediaDevices.getUserMedia({ video: true })
+    video.srcObject = await navigator.mediaDevices.getUserMedia({ video: true })
     video.play();
   }
   getImage()

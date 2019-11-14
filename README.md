@@ -1,6 +1,6 @@
 # Happy, Sad, Angry Workshop
 
-This workshop shows how to build a web based game called **Happy, Sad, Angry** using [Python](https://www.python.org) and [Flask](http://flask.pocoo.org) along with some HTML and JavaScript running on [Microsoft Azure](https://azure.microsoft.com/free/students/?WT.mc_id=happysadangry-github-jabenn). This game selects an emotion, and you have to try your best to show that emotion on your face. Once you have your best emotion face on, you take a picture with your camera and the web game will check to see what emotion you are showing using the [Azure Face Api](https://azure.microsoft.com/services/cognitive-services/face/?WT.mc_id=happysadangry-github-jabenn). If it is the same as the one you were asked to show you win.
+This workshop shows how to build a web based game called **Happy, Sad, Angry** using [Python](https://www.python.org) and [Flask](http://flask.pocoo.org) along with some HTML and JavaScript running on [Microsoft Azure](https://azure.microsoft.com/free/students/?WT.mc_id=happysadangry-github-jabenn). This game selects an emotion, and you have to try your best to show that emotion on your face. Once you have your best emotion face on, you take a picture with your camera and the web game will check to see what emotion you are showing using the [Azure Face API](https://azure.microsoft.com/services/cognitive-services/face/?WT.mc_id=happysadangry-github-jabenn). If it is the same as the one you were asked to show, you win.
 
 ![The game results showing one game won, and one lost](./images/GameResults.png)
 
@@ -16,7 +16,7 @@ To complete this workshop, you will need:
 
   * **Windows:**
 
-    You can install Python from the [Windows Store](https://www.microsoft.com/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab). This configures Python correctly on your PATH, and there are no further steps.
+    You can install Python from the [Windows Store](https://www.microsoft.com/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab&WT.mc_id=happysadangry-github-jabenn). This configures Python correctly on your PATH, and there are no further steps.
 
     If you don't want to use the store, you can install from the [Python Downloads page](https://www.python.org/downloads/). If you do this, ensure you check the *Add Python to PATH* option.
 
