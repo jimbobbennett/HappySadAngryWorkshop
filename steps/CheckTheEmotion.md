@@ -38,8 +38,8 @@ The Face Api is available as a Python package.
 * Add the following code below the imports:
 
   ```python
-  credentials = CognitiveServicesCredentials(face_api_key)
-  face_client = FaceClient(face_api_endpoint, credentials=credentials)
+  credentials = CognitiveServicesCredentials(os.environ['face_api_key'])
+  face_client = FaceClient(os.environ['face_api_endpoint'], credentials=credentials)
 
   def best_emotion(emotion):
     emotions = {}
@@ -169,11 +169,13 @@ from msrest.authentication import CognitiveServicesCredentials
 This imports all the modules needed from the Python system packages and the packages installed as part of this app.
 
 ```python
-credentials = CognitiveServicesCredentials(face_api_key)
-face_client = FaceClient(face_api_endpoint, credentials=credentials)
+credentials = CognitiveServicesCredentials(os.environ['face_api_key'])
+face_client = FaceClient(os.environ['face_api_endpoint'], credentials=credentials)
 ```
 
 This code creates a `FaceClient` - an object that can be used to access the Azure Face API. This needs to connect to a specific Face API resource, and this is configures using the endpoint from the resource that was created, and the API key via a `CognitiveServicesCredentials` object that wraps that key.
+
+The values for the endpoint and key are read from environment variables. When run locally these come from the `.env` file, when run in an Azure App Service they come from the application settings.
 
 ```python
 def best_emotion(emotion):
