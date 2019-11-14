@@ -24,4 +24,4 @@ Deleting this resource group will delete all the resources created.
 
 * Enter the name of the resource group and select *Delete*.
 
-All the resources in this group will be deleted. If you used the 7 day trial for the Face Api instead of creating it in the Azure portal then you won't see this in the resource group, and you don't need to clean it up as this will be deleted automatically after 7 days.
+All the resources in this group will be deleted.
