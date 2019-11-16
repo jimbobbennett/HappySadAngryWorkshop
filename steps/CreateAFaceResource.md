@@ -55,7 +55,23 @@ To use the Face API, you will need the key and endpoint you copied earlier. Idea
 
 Flask uses files called `.env` to store configuration data as key/value pairs. These are read at launch and are made available as environment variables that can be read from your Python code. The advantage of this method is you can create Application Settings in your Azure App Service that are read the same way - as environment variables.
 
-You should put all your secret keys into the `.env` file, and you should not check any `.env` files into source code control.
+You should put all your secret keys into the `.env` file, and you should not check any `.env` files into source code control. Flask can access values in this file using the `python-dotenv` package.
+
+* Open the `requirements.txt` file in Visual Studio Code.
+
+* Add the following to the bottom of the file:
+
+  ```python
+  python-dotenv
+  ```
+
+* Save the file
+
+* Install the new package from the terminal using the following command:
+  
+  ```sh
+  pip3 install -r requirements.txt
+  ```
 
 * Create a new file file called `.env`.
 
