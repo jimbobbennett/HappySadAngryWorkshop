@@ -70,7 +70,7 @@ The steps for this workshop are:
 1. [Deploy the Web app to the cloud using Azure App Service](./steps/DeployTheWebAppToTheCloud.md)
 1. [Create a Face API resource](./steps/CreateAFaceResource.md)
 1. [Build out the game to capture from the camera and check for emotion](./steps/CheckTheEmotion.md)
-1. [Clean up](./Steps/CleanUp.md)
+1. [Clean up](./steps/CleanUp.md)
 
 ## Code
 
